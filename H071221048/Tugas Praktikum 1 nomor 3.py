@@ -1,0 +1,5 @@
+nama= input("Masukkan nama:")
+GP = float(input("Masukkan Gaji Pokok:"))
+TP = float(input ('Masukkan Total Penjualan:'))
+Total = GP + TP*(15/100)
+print("Total = $ ",round(Total,2))
