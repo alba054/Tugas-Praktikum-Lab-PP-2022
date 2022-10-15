@@ -7,12 +7,12 @@ try:
     minute = int(fullTime // 60 % 60)  
 
     if hour < 6:
+        print("Selamat Subuh")
+    elif hour >= 6 and hour < 12:
         print("Selamat Pagi")
-    if hour >= 6 and hour < 12:
+    elif hour >= 12 and hour < 18:
         print("Selamat Siang")
-    if hour >= 12 and hour < 18:
-        print("Selamat Sore")
-    if hour >= 18:
+    elif hour >= 18:
         print("Selamat Malam")
     print("{:02d}:{:02d}:{:02d}".format(hour,minute,second)) 
 except: 
