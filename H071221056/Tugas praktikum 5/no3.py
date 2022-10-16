@@ -1,12 +1,8 @@
-array1 = set(input("input array ke 1: "))
-array2 = set(input("input array ke 2: "))
-#duplikat = []
-#for i in array1:
- #   if array1.count(i)>1:
-  #      if i not in duplikat:
-   #         duplikat.append(i)
-
-#print(duplikat)
-
-array3 = array1.intersection(array2)
-print("terdapat", len(array3), "buah duplikat yaitu", array3)
+array1 = list(map(int,input("input array ke 1: ").split(" ")))
+array2 = list(map(int,input("input array ke 2: ").split(" ")))
+irisan = []
+for i in array2:
+   if i in array1: 
+      irisan.append(i)
+arrays = tuple(irisan)
+print(f"terdapat {len(irisan)} duplikat yaitu : {arrays}")
