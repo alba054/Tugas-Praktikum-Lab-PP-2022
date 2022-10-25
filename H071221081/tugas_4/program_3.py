@@ -8,8 +8,13 @@
 #     return hasil
 
 def faktorial(x):
-    hasil = x * x-1
-    return faktorial(-1)
+    if x == 2:
+        return 2
+    return faktorial(x-1) * x
+
+# faktorial(4)
+# faktorial(3) * 4
+# faktorial(2) * 3
     
 try:
     get = int(input("masukkan angka untuk difaktorialkan : "))
