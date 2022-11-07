@@ -1,0 +1,4 @@
+nama:ilham 
+umur:19 
+asal sekolah:SMK 
+Doi:YNKTS 
