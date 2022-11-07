@@ -14,11 +14,14 @@ class person:
         self.isMale = isMale
         
     def getName(self):
-        print(self.name)
+        return self.name
         
     def getAge(self):
-        print(self.age)
+        return self.age
         
-    def getgender(self):
-        if self.isMale :print("Pria")
-        else : print("Wanita")
+    def getGender(self):
+        if self.isMale : return "Pria"
+        else : return "Wanita"
+        
+orang = person("nito", 18, False)
+print(orang.getGender())
