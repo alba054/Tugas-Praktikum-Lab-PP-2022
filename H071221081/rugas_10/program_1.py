@@ -72,10 +72,10 @@ def simpan():
         try:
             with open(getFile + ".txt", "w") as f:
                 for i in listOfData:
-                    f.write("Id       : " + listOfData[i]["id"] + "\n")
-                    f.write("Nama       : " + listOfData[i]["nama"] + "\n")
-                    f.write("Email      : " + listOfData[i]["email"] + "\n")
-                    f.write("password   : " + listOfData[i]["password"] + "\n")
+                    f.write("Id       : " + i["id"] + "\n")
+                    f.write("Nama       : " + i["nama"] + "\n")
+                    f.write("Email      : " + i["email"] + "\n")
+                    f.write("password   : " + i["password"] + "\n")
                 return "berhasil"
         except FileNotFoundError:
             return "file tidak ada"
