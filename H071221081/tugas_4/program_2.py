@@ -1,7 +1,7 @@
 from math import ceil,sqrt
 
 def prima(x:int) -> bool:
-    for i in range(2,ceil((sqrt(x)))):
+    for i in range(2,x):
         # print(i, x)
         if x % i == 0 :
             return False

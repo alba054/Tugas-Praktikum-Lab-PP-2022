@@ -13,10 +13,10 @@ try:
         raise "salah"
     for i in range(len(m1)):
         baris = []
-    for j in range(len(m2[0])):
-        hasil = 0
-        for k in range(len(m1[0])):
-            hasil = hasil + (m1[i][k] * m2[k][j])
+        for j in range(len(m2[0])):
+            hasil = 0
+            for k in range(len(m1[0])):
+                hasil = hasil + (m1[i][k] * m2[k][j])
         # print(baris)
         baris.append(hasil)
     # print(m3)
