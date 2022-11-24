@@ -1,4 +1,6 @@
 # creat class
+# name = "ayu" --> Variabel biasa
+# name = "nakita"  --> Variabel biasa
 class person:
 
     def __init__(self, name, age, gender, alamat):
@@ -34,10 +36,12 @@ class person:
 
 
 data = person("Ayu", 18, False, "makassar")
+data2 = person("nakita", 20 , True , "damai",)
 print(data.getAge())
-print(data.getName())
+print(data.name)
 print(data.getGender())
 print(data.getAlamat())
+print(data.name)
 data.setName("lisa")
 data.setAge(10)
 data.setGender(3)
