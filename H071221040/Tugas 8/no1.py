@@ -28,4 +28,3 @@ nakita = Person ('Nakita', 18, False)
 nakita.getName ()
 nakita.getAge ()
 nakita.getGender ()
-
